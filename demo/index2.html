@@ -1,0 +1,36 @@
+<html lang="en" ng-app="demo-app">
+  <head>
+    <title>Angular Js Demo</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+    </script>
+    <script type="text/javascript" src="/app/lib/app.js">
+
+    </script>
+  </head>
+  <body>
+    <ng-include src = "'header.html'"></ng-include>
+
+    <div ng-controller = "helloController">
+      <h1>4 : Controllers</h1>
+      {{message}}
+      <h3>Display List</h3>
+      <ul>
+        <li ng-repeat="fruit in fruits">{{fruit}}</li>
+      </ul>
+      <h3>What is $scope?</h3>
+      <p>The scope is the binding part between the HTML (view) and the JavaScript (controller).
+
+The scope is an object with the available properties and methods.
+
+The scope is available for both the view and the controller.</p>
+    </div>
+      <h1>5 : ng-include</h1>
+      <p>Break HTML and include them using ng-include</p>
+      <p>Example : social media button may be repaeated in header, footer.</p>
+      <p>Insted use ng-include to dump that html of social media button</p>
+
+      <h1>6 : Views/Routing</h1>
+      <p>When click on new page, it don't go to new page, but just changes view</p>
+
+</body>

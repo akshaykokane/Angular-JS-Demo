@@ -1,0 +1,25 @@
+
+  <h1>1 : Two Way Data Binding</h1>
+  <p>Its called two way data bining because if we update the view it will update the model</p>
+  <p>If we update model, then it will update view</p>
+  <input type="text" ng-model="textBox" placeholder="Type your name">
+  <h3>Hello {{textBox}}</h3>
+
+  <h1>2 : Angular Directives</h1>
+  <ul>
+    <li>Structural:
+      This guide looks at how Angular manipulates the DOM with structural directives and how you can write your own structural directives to do the same thing.
+      <p>Example : <# div *ngIf="hero" class="name">{{hero.name}}<# /div></p>
+      <p>Find more infor <a href="https://angular.io/guide/structural-directives">here</a></p>
+    </li>
+    <li>Attribute</li>
+    An Attribute directive changes the appearance or behavior of a DOM element.
+    <p>The ng-app directive tells AngularJS that this is the root element of the AngularJS application. All AngularJS applications must have a root element. You can only have one ng-app directive in your HTML document. If more than one ng-app directive appears, the first appearance will be used.</p>
+    <p>Example : ng-app, ng-model. Find more : <a href="https://angular.io/guide/attribute-directives">Here</a></p>
+  </ul>
+
+  <h1>3 : Expressions </h1>
+    <input type="number" ng-model="num1" placeholder="Enter number 1">
+    <input type="number" ng-model="num2" placeholder="Enter number 2">
+    <h3>Addition is {{num1 + num2}}</h3>
+<a href="#!/page2">Next Page</a>
